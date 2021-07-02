@@ -47,10 +47,16 @@ a:hover {
   text-decoration: line-through;
 }
 
+input {
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+}
+
 /* MEDIA QUERY */
 @media only screen and (max-width: 540px) {
   .App {
     width: 90%;
-    margin: auto;
   }
 }
