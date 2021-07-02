@@ -5,20 +5,10 @@ body {
   font-family: "Roboto", sans-serif !important;
 }
 
-#root {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.banner {
-  width: 300px;
-}
-
 .App {
   width: 600px;
   margin: auto;
+  margin-top: 100px;
 }
 
 .content {
@@ -33,4 +23,12 @@ body {
 .content,
 .footer {
   box-shadow: 10px 10px 5px -3px rgba(0, 0, 0, 0.75);
+}
+
+/* SURFACE DUO */
+@media only screen and (max-width: 540px) {
+  .App {
+    width: 90%;
+    margin: auto;
+  }
 }
