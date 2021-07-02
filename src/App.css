@@ -5,6 +5,15 @@ body {
   font-family: "Roboto", sans-serif !important;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
 .App {
   width: 600px;
   margin: auto;
@@ -15,7 +24,7 @@ body {
   background: white;
 }
 
-.eachContent {
+.todo {
   background: #eee;
 }
 
@@ -25,7 +34,20 @@ body {
   box-shadow: 10px 10px 5px -3px rgba(0, 0, 0, 0.75);
 }
 
-/* SURFACE DUO */
+.quote {
+  font-size: 12px;
+}
+
+.text {
+  border: none;
+  background: #eee;
+}
+
+.line {
+  text-decoration: line-through;
+}
+
+/* MEDIA QUERY */
 @media only screen and (max-width: 540px) {
   .App {
     width: 90%;

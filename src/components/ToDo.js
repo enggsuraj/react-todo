@@ -7,24 +7,45 @@ function ToDo({ todo, todos, setTodos }) {
     setTodos(todos.filter((el) => el.id !== todo.id));
   };
 
-  const handleCheck = () => {
+  const handleComplete = (e) => {
+    //console.log(todo);
+    setTodos(
+      todos.map((item) => {
+        if (item.id === todo.id) {
+          return {
+            ...item,
+            completed: !item.completed,
+          };
+        }
+        return item;
+      })
+    );
+  };
+
+  const handleCheck = (event) => {
     // console.log(todo.check);
     // console.log(todo);
+    const element = event.target;
+    element.classList.toggle("crossed-line");
   };
 
   return (
     <div
       key={todo.id}
-      className="eachContent rounded my-2 px-3 py-2 d-flex align-items-center justify-content-between"
+      className="todo rounded my-2 px-3 py-2 d-flex align-items-center justify-content-between"
     >
       <div className="form-check">
         <input
           className="form-check-input"
           type="checkbox"
           id="flexCheckDefault"
-          onClick={handleCheck}
+          onChange={handleComplete}
         />
-        <div className="taskName">{todo.text}</div>
+        <input
+          value={todo.text}
+          className={`text ${todo.completed ? "line" : ""}`}
+        />
+        {/* <div className="text">{todo.text}</div> */}
       </div>
       <div className="d-flex">
         {/* <div className="p-2" onClick={handleEdit}>
