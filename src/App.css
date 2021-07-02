@@ -47,6 +47,10 @@ a:hover {
   text-decoration: line-through;
 }
 
+.trash {
+  cursor: pointer;
+}
+
 input {
   border: none;
   background-color: transparent;
