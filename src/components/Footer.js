@@ -10,7 +10,11 @@ function Footer() {
         </a>
       </div>
       <div>
-        <a href="https://github.com/enggsuraj" target="_blank" rel="noreferrer">
+        <a
+          href="https://github.com/enggsuraj/react-todo"
+          target="_blank"
+          rel="noreferrer"
+        >
           {" "}
           <Github size={22} />
         </a>
