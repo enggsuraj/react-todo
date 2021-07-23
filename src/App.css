@@ -41,6 +41,7 @@ a:hover {
 .text {
   border: none;
   background: #eee;
+  width: 100%;
 }
 
 .line {

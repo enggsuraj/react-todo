@@ -51,7 +51,7 @@ function ToDo({ todo, todos, setTodos }) {
         {/* <div className="p-2" onClick={handleEdit}>
           <PencilFill size={22} />
         </div> */}
-        <div className="p-2" onClick={handleDelete}>
+        <div className="p-2 trash" onClick={handleDelete}>
           <TrashFill size={22} />
         </div>
       </div>
